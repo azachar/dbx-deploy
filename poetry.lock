@@ -164,7 +164,7 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2)", "pytest-flake8"
 
 [[package]]
 name = "console-bundle"
-version = "0.2.5"
+version = "0.3.0a1"
 description = "Console Bundle for the Pyfony Framework"
 category = "main"
 optional = false
@@ -172,7 +172,7 @@ python-versions = ">=3.7.3,<3.8.0"
 
 [package.dependencies]
 colorlog = ">=4.0.0,<4.1.0"
-pyfony-bundles = ">=0.2.0,<0.3.0"
+pyfony-bundles = "0.2.5a1"
 python-dotenv = ">=0.13.0,<0.14.0"
 
 [[package]]
@@ -403,7 +403,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "logger-bundle"
-version = "0.5.3"
+version = "0.6.0a1"
 description = "Logger bundle for the Pyfony framework"
 category = "dev"
 optional = false
@@ -411,7 +411,7 @@ python-versions = ">=3.7.3,<3.8.0"
 
 [package.dependencies]
 colorlog = ">=4.0.0,<4.1.0"
-pyfony-bundles = ">=0.2.0,<0.3.0"
+pyfony-bundles = "0.2.5a1"
 
 [[package]]
 name = "markupsafe"
@@ -591,20 +591,21 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "pyfony"
-version = "0.5.0"
+version = "0.7.0a1"
 description = "Dependency Injection powered framework"
 category = "dev"
 optional = false
 python-versions = ">=3.7.3,<3.8.0"
 
 [package.dependencies]
-console-bundle = ">=0.2.5,<0.3.0"
-injecta = ">=0.8.1,<0.9.0"
-logger-bundle = ">=0.5.3,<0.6.0"
+console-bundle = "0.3.0a1"
+injecta = ">=0.8.11,<0.9.0"
+logger-bundle = "0.6.0a1"
+pyfony-bundles = "0.2.5a1"
 
 [[package]]
 name = "pyfony-bundles"
-version = "0.2.2"
+version = "0.2.5a1"
 description = "Pyfony Framework bundles base package"
 category = "main"
 optional = false
@@ -882,7 +883,7 @@ testing = ["jaraco.itertools"]
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.7.3"
-content-hash = "e7890f5d377b7168d1bd817f2aa3928f7ef36b4bcfbe4595ddd74aaaedfacbdb"
+content-hash = "3aa5499422b53ac52d36c7d9257ab2001037cb9ed394ec9cb5d58bae965c88d3"
 
 [metadata.files]
 appnope = [
@@ -977,8 +978,8 @@ configparser = [
     {file = "configparser-4.0.2.tar.gz", hash = "sha256:c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df"},
 ]
 console-bundle = [
-    {file = "console-bundle-0.2.5.tar.gz", hash = "sha256:0280bc61cbcc4338e29a65b22dee9b37546627839745cd51c062c31d99f46944"},
-    {file = "console_bundle-0.2.5-py3-none-any.whl", hash = "sha256:f2029bbe346001a759b9774ce30455f6d3a80c36c500c8392400194fe12858f7"},
+    {file = "console-bundle-0.3.0a1.tar.gz", hash = "sha256:548424a4093f38fd640ce0fa7d4dd239fade5b70eb18c2c9b9807cc9269a20fa"},
+    {file = "console_bundle-0.3.0a1-py3-none-any.whl", hash = "sha256:3f528c69af0a8fef027e9137383f1c624b66ead7a563e8378161c45d96b7a85e"},
 ]
 databricks-api = [
     {file = "databricks_api-0.3.0-py2.py3-none-any.whl", hash = "sha256:8f637288d05b3d214ea1636bb31d6423c751d85fdccd25fd0d0c86657e7c0abc"},
@@ -1071,8 +1072,8 @@ lazy-object-proxy = [
     {file = "lazy_object_proxy-1.4.3-cp38-cp38-win_amd64.whl", hash = "sha256:59f79fef100b09564bc2df42ea2d8d21a64fdcda64979c0fa3db7bdaabaf6239"},
 ]
 logger-bundle = [
-    {file = "logger-bundle-0.5.3.tar.gz", hash = "sha256:7f68aaf7eeec7ea7c4c2ae61d89990b4e218a533364b3132cc44012ede145f1c"},
-    {file = "logger_bundle-0.5.3-py3-none-any.whl", hash = "sha256:1021f1d6bd2afd2775782ba807e4f443054f2433afa9ccb648cd6e7d0a37b244"},
+    {file = "logger-bundle-0.6.0a1.tar.gz", hash = "sha256:c16eec2f9233892a0d3ff06527661627e20832cba4e577742a367cbc2592e4f5"},
+    {file = "logger_bundle-0.6.0a1-py3-none-any.whl", hash = "sha256:4139b7549769564d682ff363741dab7af8d80d4e199c55cbab5aa90bfccd3034"},
 ]
 markupsafe = [
     {file = "MarkupSafe-1.1.1-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:09027a7803a62ca78792ad89403b1b7a73a01c8cb65909cd876f7fcebd79b161"},
@@ -1168,12 +1169,12 @@ pycparser = [
     {file = "pycparser-2.19.tar.gz", hash = "sha256:a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"},
 ]
 pyfony = [
-    {file = "pyfony-0.5.0-py3-none-any.whl", hash = "sha256:900fe83db4db554900fdfacf79532cdee1e75d2898814d84b4ad534ac2331734"},
-    {file = "pyfony-0.5.0.tar.gz", hash = "sha256:53e6d4f5e03d9815a9c89acf77abb16e356181d03be5b8352710847165260f57"},
+    {file = "pyfony-0.7.0a1-py3-none-any.whl", hash = "sha256:6df20e1facb49eaad34b971c03f28e9a181f3d54246440121160294357d4c218"},
+    {file = "pyfony-0.7.0a1.tar.gz", hash = "sha256:f0ed6188a5d9b6c497a2764813f1c6666254f17f61e3dce223f2deb35e5ff9bf"},
 ]
 pyfony-bundles = [
-    {file = "pyfony-bundles-0.2.2.tar.gz", hash = "sha256:3d0c6be33002df1fad7015319ead1e718a41d8bfe8d2387167daf284f7fe40bf"},
-    {file = "pyfony_bundles-0.2.2-py3-none-any.whl", hash = "sha256:d5c88bddd14a2773c767ea681e27f661a0712d70555c54731cb16eff64cfdde9"},
+    {file = "pyfony-bundles-0.2.5a1.tar.gz", hash = "sha256:0b71bfffa95369d63c01cda1f67e70b7d11fe4d584b4bef0c2a8daed09145063"},
+    {file = "pyfony_bundles-0.2.5a1-py3-none-any.whl", hash = "sha256:9c69409c1295cf283f1fd12a221c2eb7b7c8b714109a28751d97693c9b48cdc3"},
 ]
 pygit2 = [
     {file = "pygit2-1.3.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:64d033b76b7e489cf968e9a7cf5d9b9928ca7b3d41c1285b9c098b663e7c12ec"},
