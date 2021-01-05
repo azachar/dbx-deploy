@@ -16,7 +16,7 @@ class DeployCommand(ConsoleCommand):
 
     def getDescription(self):
         return 'Deploy to DBX'
-    
+
     def configure(self, argumentParser: ArgumentParser):
         argumentParser.add_argument(dest='output', help='Target file path exported to local file once the command is done')
 
