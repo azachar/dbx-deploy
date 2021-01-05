@@ -5,7 +5,7 @@ jobs:
   release:
     name: Release package
     runs-on: ubuntu-latest
-    if: "startsWith(github.event.head_commit.message, 'bump version to')"
+    if: "contains(github.event.head_commit.message, 'bump version to')"
     steps:
       - name: Extract version
         id: extract_version
