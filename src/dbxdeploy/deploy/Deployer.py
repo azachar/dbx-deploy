@@ -18,12 +18,12 @@ class Deployer:
         self.__currentAndReleaseDeployer = currentAndReleaseDeployer
         self.__packageDeployer = packageDeployer
 
-    async def deploy(self):
+    async def deploy(self, outputFile):
         packageMetadata = self.__packageMetadataLoader.load(self.__projectBaseDir)
 
         loop = asyncio.get_event_loop()
 
-        packageDeployFuture = loop.run_in_executor(None, self.__packageDeployer.deploy, packageMetadata)
+        packageDeployFuture = loop.run_in_executor(None, self.__packageDeployer.deploy, packageMetadata, outputFile)
         dbcDeployFuture = loop.run_in_executor(None, self.__currentAndReleaseDeployer.deploy, packageMetadata)
 
         await packageDeployFuture
